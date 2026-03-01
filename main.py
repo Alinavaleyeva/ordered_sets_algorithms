@@ -55,7 +55,7 @@ def get_algorithm_and_file_number(file_number: None):
 def main():
     file_number = None
     print("Эта программа предназначена для демонстрации алгоритма нахождения ширины у.м. через построение дерева нисходящих матриц")
-    algorithm, file_number = get_algorithm_and_file_number(file_number)
+    file_number = get_algorithm_and_file_number(file_number)
     if file_number is None:
         return
     graph_matrix = file_to_dataframe(f"data/graphs_data/graph{file_number}.txt")
